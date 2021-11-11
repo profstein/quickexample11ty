@@ -50,3 +50,358 @@ html {
   ================================================ */
   /* Add your CSS for the site here */
 
+
+    /* ================= containters ================= */
+
+    /* Base Styles */
+
+    :root {
+      font-size: 10px;
+      --header-width: 200px;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    
+    img {
+      display: block;
+    }
+    
+    .container {
+      max-width: 93.5rem;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    .btn {
+      display: inline-block;
+      font: inherit;
+      background: none;
+      border: none;
+      color: inherit;
+      padding: 0;
+      cursor: pointer;
+    }
+    
+    .btn:focus {
+      outline: 0.5rem auto #4d90fe;
+    }
+    
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+    }
+    
+    
+    /* Gallery Section */
+    
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -1rem -1rem;
+      padding-bottom: 3rem;
+    }
+    
+    .gallery-item {
+      position: relative;
+      flex: 1 0 22rem;
+      margin: 1rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    
+    .gallery-item-info {
+      display: none;
+    }
+    
+    .gallery-item-info li {
+      display: inline-block;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+    
+    
+    
+    .gallery-item-type {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 2.5rem;
+      text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    
+    .gallery-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    
+    
+    /* Media Query */
+    
+    
+    
+    /* bbb */
+    
+     .gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+          grid-gap: 2rem;
+      }
+    
+    .gallery-item,
+      .gallery {
+          width: auto;
+          margin: 0;
+      }
+     
+    
+    
+    /* ==================================
+       Contact
+       ==================================  */
+       li,ul{list-style:none;
+        padding:0;
+        margin:0}
+      .sec-title{position:relative;
+        padding-bottom:40px}
+      .sec-title .title{position:relative;
+        color:#C6BAB5;
+        font-size:18px;
+        font-weight:700;
+        padding-right:50px;
+        margin-bottom:15px;
+        display:inline-block;
+        text-transform:capitalize}
+      .sec-title .title:before{position:absolute;
+        content:'';
+        right:0;
+        bottom:7px;
+        width:40px;
+        height:1px;
+        background-color:#bbb}.sec-title h2{position:relative;
+          color:#252525;
+          font-size:36px;
+          font-weight:700;
+          line-height:1.5em;
+          display:block}
+      .sec-title.light h2{color:#fff}.contact-page-section{position:relative;
+        padding-top:110px;
+        padding-bottom: 110px;
+      }.contact-page-section .inner-container{position:relative;
+          z-index:1;background-color:#C6BAB5;
+        box-shadow:0 0 15px 5px rgba(0,0,0,.1)}.contact-page-section .form-column{position:relative;
+          padding:0 0 0 15px}.contact-page-section .form-column .inner-column{position:relative;
+            padding:60px 45px 30px;
+            background-color:#fff}.contact-page-section .info-column{position:relative}.contact-page-section .info-column .inner-column{position:relative;
+              padding:60px 35px}.contact-page-section .info-column h2{position:relative;
+                color:#fff;
+              font-size:30px;font-weight:700;
+              line-height:1.4em;margin-bottom:45px}.contact-page-section .info-column .list-info{position:relative;
+                margin-bottom:60px}.contact-page-section .info-column .list-info li{position:relative;
+                  margin-bottom:25px;
+                  font-size:18px;color:#fff;
+                  line-height:1.8em;
+                  padding-left:45px}.contact-page-section .info-column .list-info li:last-child{margin-bottom:0}.contact-page-section .info-column .list-info li i{position:absolute;
+                    left:0;top:8px;
+                    color:#fff;
+                    font-size:30px}.contact-form{position:relative}.contact-form .form-group{position:relative;
+                      margin-bottom:20px}.contact-form input[type=text],.contact-form input[type=email],.contact-form textarea{position:relative;display:block;width:100%;
+                        height:60px;
+                        color:#222;
+                        font-size:14px;
+                        line-height:38px;
+                        padding:10px 30px;
+                        border:1px solid #ddd;
+                        background-color:#fff;
+                        transition:all .3s ease;
+                        -ms-transition:all .3s ease;-webkit-transition:all .3s ease}.contact-form input[type=text]:focus,.contact-form input[type=email]:focus,.contact-form textarea:focus{border-color:#00b8ca}.contact-form textarea{height:250px;resize:none}.contact-form .theme-btn{font-size:16px;
+                          font-weight:700;
+                          margin-top:10px;
+                          text-transform:capitalize;
+                          
+                          padding:16px 39px;
+                          border:2px solid #C6BAB5;
+                          font-family:Arimo,sans-serif;
+                          background:#C6BAB5;
+                          display:inline-block;
+                          position:relative;
+                          line-height:24px;
+                          cursor:pointer;color:#fff}.contact-form .theme-btn:hover{color:#00b8ca;border-color:#00b8ca;background:0 0}.contact-form input.error,.contact-form select.error,.contact-form textarea.error{border-color:red!important}.contact-form label.error{display:block;line-height:24px;
+                            padding:5px 0 0;margin:0;text-transform:uppercase;font-size:12px;
+                            color:red;
+                            font-weight:500}.social-icon-four{position:relative}.social-icon-four li{position:relative;
+                              margin-right:18px;
+                              display:inline-block}.social-icon-four li.follow{color:#fff;font-weight:600;font-size:24px;display:block;margin-bottom:20px}.social-icon-four li a{position:relative;
+                            font-size:20px;color:#fff;
+                            -webkit-transition:all .3s ease;-ms-transition:all .3s ease;
+                -o-transition:all .3s ease;
+                -moz-transition:all .3s ease;
+                transition:all .3s ease}.social-icon-four li a:hover{color:#222}
+      
+      
+      /* ==================================
+         Contact
+         ==================================  */
+      
+      
+    
+    
+    /* ==================================
+       Responsive Styling and Layout
+       ==================================  */
+    
+    /* ================= Use Border Box model ================= */
+    html {
+      box-sizing: border-box;
+      font-size: 100%;
+    color: white;
+    }
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+    
+    /* ================= Basic Responsive Images and Video ================= */
+    img,video{
+      width: auto;
+      height: auto;
+      max-width: 100%;
+    }
+    
+    /* ================= Responsive Embedded Video ================= */
+    /* to use this add a div with class videoWrapper around the iframe markup copied from YouTube or Vimeo. Then also add a ratio-16-9 (most common) or ratio-4-3 class to the wrapper depending on the aspect ratio of your video */
+    /* More info here: https://codepen.io/profstein/pen/mArLRj */
+    .videoWrapper {
+        position: relative;
+        padding-top: 25px;
+        height: 0;
+      clear:both;
+      outline:1px solid red;
+    }
+    
+    .videoWrapper.ratio-16-9{
+        padding-bottom: 56.25%; /* 16:9 */
+    }
+    
+    .videoWrapper.ratio-4-3{
+        padding-bottom: 75%; /* 4:3 */
+    }
+    
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    h3 {
+      font-family:  Raleway;
+      font-size: 21px;
+    
+    }
+    
+    body {
+    
+    font-family: Raleway;
+    color: black;
+    margin: 0;
+    padding: 0;
+    }
+    
+    
+    a {
+    text-decoration: none;
+    color: inherit
+    }
+    
+    a:hover {
+    color: #B59C93;
+    }
+    
+    .highlight-inline {
+    display: inline;
+    background-color: black;
+    color: #C6BAB5;
+    padding: 2px;
+    line-height: 1.62em;
+    /* box-shadow: 10px 0 0 black, -10px 0 0 black;*/
+    
+    box-decoration-break: clone;
+    }
+    
+    #header {
+      position: fixed;
+    width: 200px;
+    background: #C6BAB5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    }
+    
+    
+    
+    #header ul {
+    list-style-type: none;
+    width: inherit;
+    
+    }
+    
+    #header ul li {
+    padding: 0 12px 3px 0;
+    white-space: nowrap;
+    font-size: 0.98em;
+    font-weight: 700;
+    text-align: right;
+    
+    }
+    
+    
+    
+    
+    
+    #content {
+    font-size: 1.20em;
+    font-weight: 300;
+    background: white;
+    margin-left: 200px;
+    padding-left: 0em;
+    }
+    
+    
+    
+    
+    
+    @media screen and (max-width: 640px) {
+    #header {
+      height: 125px;
+      display: table;
+      width: 100%;
+      position: relative;
+    }
+    #header ul li {
+      display: inline;
+    }
+    #content  {
+      margin-left: 0;
+      margin-top: 125px;
+    
+    }
+    }
+    
